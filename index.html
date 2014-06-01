@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Web-form-validator : Jqeury based web form validator which makes form validation as simple as calling a method!!!!!" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Web-form-validator</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/venugupta/web-form-validator">View on GitHub</a>
+
+          <h1 id="project_title">Web-form-validator</h1>
+          <h2 id="project_tagline">Jqeury based web form validator which makes form validation as simple as calling a method!!!!!</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/venugupta/web-form-validator/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/venugupta/web-form-validator/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="web-form-validator" class="anchor" href="#web-form-validator"><span class="octicon octicon-link"></span></a>web-form-validator</h1>
+
+<p>Jqeury based web form validator which makes form validation as simple as calling a method!!!!!</p>
+
+<h1>
+<a name="instructions" class="anchor" href="#instructions"><span class="octicon octicon-link"></span></a>Instructions:</h1>
+
+<p>1)requires jquery</p>
+
+<p>2)currently only required &amp; email validations are supported. Other validations can be implemented as simply as adding a new function!!!</p>
+
+<h1>
+<a name="example" class="anchor" href="#example"><span class="octicon octicon-link"></span></a>Example:</h1>
+
+<h1>
+<a name="web-form" class="anchor" href="#web-form"><span class="octicon octicon-link"></span></a>Web form:</h1>
+
+<p>&lt;input type='text' id='txtTest' name='txtTest' /&gt;</p>
+
+<p>&lt;input type='text' id='txtTest2' name='txtTest2' /&gt;</p>
+
+<p>&lt;input type='button' id='btnTest' value="Validate"&gt;</p>
+
+<h1>
+<a name="script" class="anchor" href="#script"><span class="octicon octicon-link"></span></a>Script:</h1>
+
+<pre><code>$('#btnTest').click(function () {
+    var fmFields = {
+        txtTest: {
+            required: {
+                instruction: '',
+                message: 'txtTest is required'
+            },
+            email: {
+                instruction: '^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$',
+                message: 'txtTest has invalid email'
+            }
+        },
+        txtTest2: {
+            required: {
+                validate: true,
+                message: 'txtTest2 is required'
+            }
+        }
+    };
+
+    ValidateForm(fmFields);
+
+});
+</code></pre>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Web-form-validator maintained by <a href="https://github.com/venugupta">venugupta</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
