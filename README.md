@@ -32,7 +32,6 @@ Script:
         var fmFields = {
             txtTest: {
                 required: {
-                    instruction: '',
                     message: 'txtTest is required'
                 },
                 email: {
@@ -42,7 +41,6 @@ Script:
             },
             txtTest2: {
                 required: {
-                    validate: true,
                     message: 'txtTest2 is required'
                 }
             }
