@@ -8,7 +8,7 @@ Instructions:
 =============
 1)requires jquery
 
-2)currently only required & email validations are supported. Other validations can be implemented as simply as adding a new function!!!
+2)currently only required & email validations are supported. Other validations can be implemented as simply as adding new functions!!!
 
 
 Example:
